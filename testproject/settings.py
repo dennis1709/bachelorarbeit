@@ -17,11 +17,7 @@ SITE_ROOT = os.path.realpath(os.path.dirname(__file__))
 DATABASES = {
 	'default': {
 		'ENGINE': 'django.db.backends.sqlite3',
-		'NAME': os.path.join(SITE_ROOT, '..', 'testproject.db'),
-		'USER': '',
-		'PASSWORD': '',
-		'HOST': '',
-		'PORT': '',
+		'NAME': os.path.join(SITE_ROOT, '..', 'db.sqlite3'),
 	}
 }
 
