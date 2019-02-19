@@ -3,7 +3,17 @@
 	<title>Meine Bachelorarbeit</title>
 </head>
 <body>
-	<p>Hi there!</p>
-	<p>It works!</p>
+	<div>
+		<h1>Überschrift!</h1>
+	</div>
+	{{ benutzers }}
+	{% for benutzer in benutzers %}
+		<div>
+			<h2>Benutzernummer: {{ benutzer.userid }}</h2>
+			<p>Name: {{ benutzer.name }}</p>
+			<p>Vorname: {{ benutzer.vorname }}</p>
+		</div>
+	{% endfor %}
+	
 </body>
 </html>
