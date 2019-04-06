@@ -1,0 +1,28 @@
+{% load static %}
+
+<html>
+<head>
+	<title>Meine Bachelorarbeit</title>
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+	<link rel="styleshett" href="//fonts.googleapis.com/css?family=Inconsolata">
+	<link rel="stylesheet" href="{% static 'css/testapp.css' %}">
+</head>
+<body>
+	<div class="page-header">
+		<h1><a href="/">Die Überschrift steht immer hier!</a></h1>
+	</div>
+	<div class="benutzer">
+		{% block content %}
+		{% endblock %}
+	</div>
+	<div class="keinbenutzer">
+		{% block contentzwei %}
+		{% endblock %}
+	</div>
+
+	<div id="warum">
+		57 Ochsen
+	</div>
+</body>
+</html>

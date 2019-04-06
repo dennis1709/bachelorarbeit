@@ -1,0 +1,22 @@
+body {
+	padding-left: 100px;
+	font-family: 'Inconsolata', monospace;
+}
+
+.page-header {
+	background-color: #C25100;
+}
+
+.page-header h1 {
+	color: #ffffff;
+	font-size: 36pt;
+}
+
+.keinbenutzer {
+	background-color: #04B404;
+}
+
+#warum {
+	color: #04B404;
+	font-size: 36pt;
+}

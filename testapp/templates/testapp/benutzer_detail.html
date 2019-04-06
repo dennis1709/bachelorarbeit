@@ -1,0 +1,14 @@
+{% extends 'testapp/base.html' %}
+
+{% block contentzwei %}
+<div class="keinbenutzer">
+<p>INCOMING</p>
+	{% for benutzer in benutzers %}
+		<h1>Detailseite!</h1>
+		<h2>{{ benutzer.alter }}</h2>
+		<p>{{ benutzer.name }}</p>
+		<p>{{ benutzer.vorname }}</p>
+		<p>Ich bin auf der Detailseite angekommen!</p>
+	{% endfor %}
+</div>
+{% endblock %}

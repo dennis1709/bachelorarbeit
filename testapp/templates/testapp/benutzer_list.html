@@ -1,19 +1,12 @@
-<html>
-<head>
-	<title>Meine Bachelorarbeit</title>
-</head>
-<body>
-	<div>
-		<h1>Überschrift!</h1>
-	</div>
-	{{ benutzers }}
+{% extends 'testapp/base.html' %}
+
+{% block content %}
+<div class="benutzer">
 	{% for benutzer in benutzers %}
-		<div>
-			<h2>Benutzernummer: {{ benutzer.userid }}</h2>
-			<p>Name: {{ benutzer.name }}</p>
-			<p>Vorname: {{ benutzer.vorname }}</p>
-		</div>
+		<h2><a href="{% url 'benutzer_detail' pk=benutzer.pk %}">Benutzername: {{ benutzer.name }}</a></h2>
+		<p>Vorname: {{ benutzer.vorname }}</p>
+		<p>Alter: {{ benutzer.alter }}</p>
+		<p>Geheime ID: {{ benutzer.pk }}</p>
 	{% endfor %}
-	
-</body>
-</html>
+</div>
+{% endblock %}
